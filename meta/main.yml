@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: finaltestroundpublish
   author: Astudio
-  description: round 1
+  description: round 2 with dependencies
   company: NoName
   issue_tracker_url: '-'
   license: MIT
@@ -15,4 +15,8 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
-dependencies: []
+dependencies:
+  - role: geerlingguy.nginx
+    version: 3.1.4
+  - role: geerlingguy.git
+    version: 3.0.1
